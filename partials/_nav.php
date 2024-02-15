@@ -21,7 +21,7 @@ echo '<nav class="navbar navbar-expand-lg bg-body-tertiary">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/loginsystem/welcome.php">Home</a>
         </li>';
-
+// if conditionals to ensure coherent nav bar. Dependent on log in status.
         if ($loggedin == FALSE){
           echo
           '<li class="nav-item">
@@ -38,6 +38,7 @@ echo '<nav class="navbar navbar-expand-lg bg-body-tertiary">
             <a class="nav-link" href="/loginsystem/logout.php">Log Out</a>
           </li> 
         ';};
+
         echo '
       </ul>
       <form class="d-flex" role="search">
